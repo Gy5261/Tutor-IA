@@ -2,6 +2,18 @@
 
 Este archivo documenta los cambios visibles y relevantes de cada versión pública. Las entradas se ordenan de la más reciente a la más antigua y utilizan categorías consistentes para distinguir funciones nuevas, correcciones, mejoras y cambios de comportamiento.
 
+## 1.1.1
+
+### Corregido
+
+- Eliminado el riel de desplazamiento nativo de Windows/Chromium que aparecía como una barra lateral blanca con flechas dentro de Ajustes y otras superficies principales.
+- Eliminado el espacio lateral reservado por ese riel en conversaciones largas.
+
+### Mejorado
+
+- El desplazamiento continúa funcionando mediante rueda, touchpad, teclado y gestos táctiles, sin introducir controles visuales adicionales.
+- Unificado el comportamiento en Ajustes, selector de modelos, conversación, espacio de aprendizaje y desplegables internos.
+
 ## 1.1.0
 
 ### Añadido
