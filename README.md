@@ -2,6 +2,8 @@
 
 Tutor-IA es una plataforma educativa de inteligencia artificial para Windows, diseñada para aprendizaje personalizado, herramientas integradas y almacenamiento local-first.
 
+[Descargar la versión más reciente](https://github.com/Gy5261/Tutor-IA/releases/latest) · [Ver todos los cambios](CHANGELOG.md) · [Privacidad](PRIVACIDAD.md) · [Seguridad](SECURITY.md)
+
 ## Descargar
 
 El ejecutable oficial se publica exclusivamente en la sección **Releases** de este repositorio. El repositorio público no contiene el código fuente del Core ni del Backend.
@@ -52,7 +54,9 @@ Tutor-IA utiliza versionado semántico `X.Y.Z`:
 - `Y`: nuevas funciones compatibles con la versión anterior;
 - `Z`: correcciones, seguridad y mejoras de estabilidad.
 
-Cada Release incluye un resumen funcional, correcciones relevantes, requisitos de migración, estado de compatibilidad y hashes verificables. Si una actualización necesita una acción manual, se indicará antes de descargarla.
+Cada Release incluye cambios observables para el usuario, correcciones relevantes, requisitos de migración, limitaciones conocidas y hashes verificables. Las notas usan categorías consistentes —**Añadido**, **Corregido**, **Mejorado**, **Cambiado** y **Eliminado**— para que sea fácil identificar el impacto de una versión.
+
+El historial completo y cronológico está en [CHANGELOG.md](CHANGELOG.md). Las Releases de GitHub presentan el resumen de cada entrega y sus archivos descargables; el changelog conserva el detalle acumulado entre versiones. Si una actualización necesita una acción manual, se indicará antes de descargarla.
 
 ## Privacidad
 
