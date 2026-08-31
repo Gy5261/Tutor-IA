@@ -2,6 +2,32 @@
 
 Este archivo documenta los cambios visibles y relevantes de cada versión pública. Las entradas se ordenan de la más reciente a la más antigua y utilizan categorías consistentes para distinguir funciones nuevas, correcciones, mejoras y cambios de comportamiento.
 
+## 1.2.1
+
+### Añadido
+
+- Añadidos perfiles físicos específicos para escritura progresiva y razonamiento mediante conversión perceptual `duration/bounce`.
+- Añadida transformación enlazada desde el indicador de actividad hacia el panel de razonamiento.
+- Añadida materialización localizada de la palabra nueva durante el streaming.
+
+### Mejorado
+
+- Unificadas las transiciones del glifo, etiquetas, herramientas, cursor y panel de razonamiento bajo una sola fuente matemática.
+- La expansión y contracción del razonamiento comparten una trayectoria reversible y muestreada.
+- El contenido se muestra inmediatamente y conserva la agrupación de renders sin introducir un efecto de escritura artificialmente lento.
+
+### Corregido
+
+- Eliminada la aparición brusca de palabras al recibir nuevos fragmentos.
+- Evitado que párrafos completos vuelvan a animarse durante cada actualización.
+- Eliminadas automáticamente las capas temporales utilizadas para materializar texto.
+- Conservados Markdown, código, LaTeX, tablas y visualizaciones durante el streaming.
+
+### Datos y accesibilidad
+
+- Se respetan movimiento reducido, transparencia reducida y contraste aumentado.
+- Conversaciones, memoria, selección de modelo, progreso y configuración local se conservan sin migraciones destructivas.
+
 ## 1.2.0
 
 ### Añadido
