@@ -2,6 +2,32 @@
 
 Este archivo documenta los cambios visibles y relevantes de cada versión pública. Las entradas se ordenan de la más reciente a la más antigua y utilizan categorías consistentes para distinguir funciones nuevas, correcciones, mejoras y cambios de comportamiento.
 
+## 1.2.0
+
+### Añadido
+
+- Añadido un sistema de movimiento consciente del origen: cada menú, panel y diálogo nace desde las coordenadas exactas del control que lo activa.
+- Añadida una trayectoria geométrica inversa para que cada superficie vuelva al mismo control al cerrarse.
+- Añadida interpolación perceptual de resorte con 59 muestras estables y escalado independiente por eje.
+
+### Mejorado
+
+- Coordinadas la expansión, la opacidad, el desenfoque del fondo y la transformación de las esquinas en una única transición continua.
+- Unificado el movimiento de menús, submenús, Ajustes, selector de modelos, espacio de aprendizaje y actualizador.
+- Mejorada la navegación por teclado y la recuperación de foco al regresar o cerrar una superficie.
+
+### Corregido
+
+- Corregido un estado cancelado de animación que podía causar saltos, parpadeos o cierres duplicados.
+- Corregidas carreras de estado al abrir, cerrar, volver o cambiar rápidamente entre opciones.
+- Corregida la sincronización de los fondos de diálogo y de las pruebas de interfaz.
+
+### Rendimiento, accesibilidad y datos
+
+- Las trayectorias utilizan transformaciones compuestas y opacidad para evitar recálculos de layout durante cada fotograma.
+- Se respetan movimiento reducido, transparencia reducida y contraste aumentado.
+- Conversaciones, memoria, progreso, credenciales, selección de modelo y preferencias locales se conservan sin migración destructiva.
+
 ## 1.1.10
 
 ### Corregido
