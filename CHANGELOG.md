@@ -2,6 +2,29 @@
 
 Este archivo documenta los cambios visibles y relevantes de cada versión pública. Las entradas se ordenan de la más reciente a la más antigua y utilizan categorías consistentes para distinguir funciones nuevas, correcciones, mejoras y cambios de comportamiento.
 
+## 1.1.9
+
+### Añadido
+
+- Añadido control administrativo global para pausar o restaurar el acceso estudiantil en las instalaciones conectadas.
+- Añadido directorio protegido de cuentas y dispositivos con actividad, versión del sistema y versión instalada de Tutor-IA.
+- Añadidas reglas Firebase que permiten a cada cuenta escribir únicamente su propio registro y reservan la lectura global para el administrador.
+
+### Corregido
+
+- Corregido el panel anterior que se presentaba como multi-dispositivo aunque solo consultaba el archivo del PC local.
+- Corregida la posibilidad de continuar indefinidamente con un estado de acceso antiguo cuando el servicio global no está disponible.
+
+### Mejorado
+
+- Mejorada la tolerancia a cortes mediante un caché cifrado breve sin convertirlo en una segunda fuente de verdad.
+- Mejorada la presentación de dispositivos agrupados, versión instalada y último acceso dentro de Ajustes.
+
+### Privacidad
+
+- Conversaciones, archivos, memoria, progreso y configuración continúan exclusivamente en el PC.
+- El registro remoto excluye IP, seriales de hardware, teléfonos, conversaciones, archivos, comandos, respuestas y credenciales.
+
 ## 1.1.1
 
 ### Corregido

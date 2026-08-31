@@ -61,6 +61,7 @@ El historial completo y cronológico está en [CHANGELOG.md](CHANGELOG.md). Las 
 ## Privacidad
 
 - Conversaciones, historial, preferencias, configuración, progreso y memoria permanecen en el equipo.
+- El control administrativo registra en Firebase solo identidad, fechas de acceso y datos básicos del equipo; únicamente el administrador autorizado puede consultar el directorio global.
 - GitHub se utiliza únicamente para distribuir el ejecutable y su suma de verificación.
 - Tutor-IA no usa este repositorio como servidor ni como almacenamiento personal.
 - Las conexiones a Google y proveedores de modelos ocurren únicamente cuando el usuario activa esas funciones.
