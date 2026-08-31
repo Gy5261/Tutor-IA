@@ -2,6 +2,19 @@
 
 Este archivo documenta los cambios visibles y relevantes de cada versión pública. Las entradas se ordenan de la más reciente a la más antigua y utilizan categorías consistentes para distinguir funciones nuevas, correcciones, mejoras y cambios de comportamiento.
 
+## 1.1.10
+
+### Corregido
+
+- Corregida la regla de Firestore que impedía al administrador cargar la consulta global de dispositivos.
+- Añadida una recuperación por cuenta para mantener disponible el panel si la consulta global falla temporalmente.
+- Evitado que un fallo aislado de dispositivos oculte también el directorio de cuentas.
+
+### Seguridad y compatibilidad
+
+- La consulta global continúa reservada exclusivamente al administrador; los estudiantes solo acceden a su propio registro.
+- La regla corregida beneficia también a instalaciones 1.1.9 existentes y la actualización no modifica datos locales.
+
 ## 1.1.9
 
 ### Añadido
