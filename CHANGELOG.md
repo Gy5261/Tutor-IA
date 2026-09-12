@@ -2,7 +2,17 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
-## [4.1.4](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.4)
+## [4.1.5](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.5)
+
+- Diálogos que se abren desde su botón de origen y se cierran siguiendo el recorrido inverso.
+- Transiciones direccionales al cambiar opciones de aprendizaje, administración e IA privada.
+- Gestión de estudiantes con apertura y cierre animados, conservando los campos.
+- Reutilización de fotogramas al invertir animaciones y menor preparación con movimiento reducido.
+- Revisión de 1.335 fotogramas de referencia, comparaciones visuales de apertura/cierre y pruebas completas de interfaz.
+
+Los equipos conectados reciben la actualización durante su siguiente comprobación del canal automático.
+
+## 4.1.4
 
 - Navegación administrativa segmentada y tarjetas que aprovechan el ancho disponible.
 - Gestión de estudiantes, cohortes e importación desplegable, conservando los campos al cerrarla.
