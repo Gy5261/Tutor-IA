@@ -2,7 +2,7 @@
 
 ## Antes de instalar
 
-La release 4.1.2 publica un instalador Windows x64. Las operaciones de Google, IA remota, colaboración y actualización requieren conexión. El acceso a IA depende de la cuenta y la configuración administrativa.
+La release 4.1.3 publica un instalador Windows x64. Las operaciones de Google, IA remota, colaboración y actualización requieren conexión. El acceso a IA depende de la cuenta y la configuración administrativa.
 
 Este repositorio no fija una cantidad mínima de RAM o disco comprobada para todas las cargas. No se ofrece aquí un instalador macOS/Linux ni una instalación mediante npm o winget.
 
@@ -16,7 +16,7 @@ Este repositorio no fija una cantidad mínima de RAM o disco comprobada para tod
 
 No descargues “Source code” para instalar. No uses el repositorio como proyecto npm: contiene documentación y distribución, no las fuentes de la aplicación.
 
-El estado de firma se declara en el manifiesto. La versión 4.1.2 está publicada sin firma Authenticode; consulta [seguridad](../SECURITY.md) y no desactives las protecciones del equipo como paso de instalación.
+El estado de firma se declara en el manifiesto. La versión 4.1.3 está publicada sin firma Authenticode; consulta [seguridad](../SECURITY.md) y no desactives las protecciones del equipo como paso de instalación.
 
 ## Acceso a la IA
 

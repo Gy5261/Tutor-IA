@@ -2,7 +2,16 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
-## [4.1.2](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.2)
+## [4.1.3](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.3)
+
+- Interfaz, backend local y pruebas organizados en sus carpetas correspondientes.
+- Imports, rutas de recursos y empaquetado actualizados para conservar el funcionamiento de Electron.
+- Documentación ampliada por módulo y guías vigentes separadas del archivo histórico.
+- Sin cambios funcionales a Google, Firebase, renovación de sesión, funciones en pausa ni política de actualización y firma.
+
+La actualización se distribuye por el canal existente a los clientes conectados durante su siguiente comprobación.
+
+## 4.1.2
 
 Resumen de las notas publicadas:
 

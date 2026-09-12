@@ -10,7 +10,7 @@
 | Un proveedor no acepta su URL | La IA privada requiere HTTPS público y protocolo compatible con Chat Completions; no cualquier URL o protocolo funciona |
 | No aparece una actualización | Comprueba versión instalada, conexión y si utilizas instalador o portable |
 | La descarga está dañada | Compara tamaño/hash con el manifiesto de esa release |
-| Windows muestra información de firma | Consulta el estado del manifiesto; 4.1.2 declara `NotSigned` |
+| Windows muestra información de firma | Consulta el estado del manifiesto; 4.1.3 declara `NotSigned` |
 | Falló una herramienta | Conserva el error y los pasos; no amplíes permisos ni desactives guardias para ocultarlo |
 
 ## Reportar un error
