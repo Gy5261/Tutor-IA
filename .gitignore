@@ -5,3 +5,6 @@
 !PRIVACIDAD.md
 !SECURITY.md
 !checksums.txt
+!docs/
+!docs/**/
+!docs/**/*.md
