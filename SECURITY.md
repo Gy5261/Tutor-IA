@@ -6,7 +6,7 @@ Descarga el instalador desde las [Releases oficiales](https://github.com/Gy5261/
 
 Compara el SHA-256 del instalador con el manifiesto de **esa misma versión**. El tamaño y SHA-512 también están registrados. [Instrucciones de verificación](docs/actualizaciones.md).
 
-El manifiesto publicado de **4.1.3 declara `NotSigned`**. El canal actual no exige certificado Authenticode; no debe describirse este instalador como firmado. Los hashes comprueban integridad respecto al manifiesto, pero no sustituyen una firma del editor. Esta documentación no cambia la política del actualizador ni indica que se desactiven protecciones de Windows.
+El manifiesto publicado de **4.1.4 declara `NotSigned`**. El canal actual no exige certificado Authenticode; no debe describirse este instalador como firmado. Los hashes comprueban integridad respecto al manifiesto, pero no sustituyen una firma del editor. Esta documentación no cambia la política del actualizador ni indica que se desactiven protecciones de Windows.
 
 ## Reportar una vulnerabilidad
 

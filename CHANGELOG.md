@@ -2,7 +2,17 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
-## [4.1.3](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.3)
+## [4.1.4](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.4)
+
+- Navegación administrativa segmentada y tarjetas que aprovechan el ancho disponible.
+- Gestión de estudiantes, cohortes e importación desplegable, conservando los campos al cerrarla.
+- Directorio con altura útil y acciones del estudiante alineadas, también en ventanas pequeñas.
+- Filtros de Consumo en filas equilibradas de cuatro o dos columnas.
+- Verificación visual de 27 combinaciones de vistas y tamaños con datos sintéticos.
+
+Se conservan Firebase, Supabase, Google, las funciones en pausa y el actualizador existente.
+
+## 4.1.3
 
 - Interfaz, backend local y pruebas organizados en sus carpetas correspondientes.
 - Imports, rutas de recursos y empaquetado actualizados para conservar el funcionamiento de Electron.
