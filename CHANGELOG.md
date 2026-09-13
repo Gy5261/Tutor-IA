@@ -2,6 +2,15 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
+## [4.3.0](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.3.0)
+
+- Selección de motores de búsqueda Python, procedencia y errores por proveedor; lectura simultánea de fuentes y recuperación de conexión.
+- Google, Bing, DuckDuckGo, Baidu, Yandex y Sogou mediante respuestas públicas legibles. Las restricciones, CAPTCHA y dependencias de JavaScript se informan; no se eluden.
+- X/Twitter mediante publicaciones públicas indexadas por Bing, sin acceso a la API autenticada de X.
+- Código negro permanente, copiar/descargar/ampliar y estados claros de análisis, herramientas, ejecución y finalización.
+- Salidas largas con actualizaciones agrupadas, búfer acotado y aviso de recorte.
+- Instalador con canal automático y portable manual. La disponibilidad de cada buscador depende también de sus restricciones externas.
+
 ## [4.2.0](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.2.0)
 
 - Ejecución opcional por conversación con aislamiento nativo Windows, sin Docker ni instalaciones adicionales; permiso desactivado por defecto y revocable.
