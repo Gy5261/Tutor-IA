@@ -2,6 +2,12 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
+## [4.3.1](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.3.1)
+
+- Corrección de emergencia: palabras, texto normal, sangrías y signos sueltos ya no abren por sí solos el panel de código.
+- Los bloques reales de código conservan su tarjeta negra y sus acciones durante la recepción de la respuesta.
+- La recuperación de errores de formato muestra texto literal seguro, sin convertir toda la respuesta en código.
+
 ## [4.3.0](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.3.0)
 
 - Selección de motores de búsqueda Python, procedencia y errores por proveedor; lectura simultánea de fuentes y recuperación de conexión.
