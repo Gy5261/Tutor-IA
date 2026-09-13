@@ -2,6 +2,15 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
+## [4.2.0](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.2.0)
+
+- Ejecución opcional por conversación con aislamiento nativo Windows, sin Docker ni instalaciones adicionales; permiso desactivado por defecto y revocable.
+- Código y salida reales en vivo, con eliminación del entorno al borrar la conversación.
+- Investigación web con lectura de fuentes públicas y herramientas integradas con la IA privada.
+- Visor administrativo del plan de estudio conectado a los resúmenes de Firebase y adaptado a la apariencia elegida.
+- Comprobaciones de ejecución para evaluar prácticas cuando el estudiante concede acceso completo.
+- Instalador Windows x64 para actualización automática y portable de reemplazo manual.
+
 ## [4.1.8](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.8)
 
 - Contador diario en forma de cápsula con cuatro indicadores, conectado al consumo real.

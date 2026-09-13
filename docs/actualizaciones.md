@@ -21,11 +21,11 @@ Los artefactos de versiones diferentes no deben mezclarse. El [checksums.txt](..
 
 ## Verificar una descarga
 
-Para la versión 4.1.8, descarga el instalador y manifiesto de [la misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.8). Desde esa carpeta:
+Para la versión 4.2.0, descarga el instalador y manifiesto de [la misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.2.0). Desde esa carpeta:
 
 ```powershell
 $manifest = Get-Content -Raw -LiteralPath .\release-manifest.json | ConvertFrom-Json
-$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-4.1.8.exe
+$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-4.2.0.exe
 $actualHash = (Get-FileHash -LiteralPath $installer.FullName -Algorithm SHA256).Hash
 if ($installer.Name -ne $manifest.installer.name) { throw 'El nombre no coincide.' }
 if ($installer.Length -ne $manifest.installer.size) { throw 'El tamaño no coincide.' }
