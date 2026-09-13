@@ -2,6 +2,13 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
+## [4.1.8](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.8)
+
+- Contador diario en forma de cápsula con cuatro indicadores, conectado al consumo real.
+- Colores de apariencia aplicados al contador, gráficos, animación de IA, salida de código y superficies administrativas.
+- Ajustes para cifras largas, ventanas estrechas y movimiento reducido.
+- Instalador Windows x64 con actualización automática y portable de reemplazo manual.
+
 ## [4.1.7](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.7)
 
 - Menú del Centro Administrativo integrado con el diseño de la aplicación, navegación por teclado y cierre consistente.
