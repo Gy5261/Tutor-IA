@@ -35,7 +35,7 @@ La versión vigente usa Google para iniciar sesión. El acceso institucional y e
 
 La edición instalada consulta este mismo canal para obtener nuevas versiones. Los clientes reciben las actualizaciones cuando están conectados y realizan su comprobación; una publicación no significa que todos los equipos ya estén actualizados.
 
-Cada release actualizable incluye instalador, `.blockmap`, `latest.yml` y `release-manifest.json`. Para instalar manualmente, solo necesitas el `.exe`; los demás archivos permiten la actualización y verificación.
+La release 4.1.7 incluye instalador, portable, `.blockmap`, `latest.yml`, `release-manifest.json` y SBOM de dependencias npm. El instalador conserva el canal automático. La edición portable se descarga y reemplaza manualmente; los demás archivos permiten la actualización y verificación.
 
 [Cómo actualizar y verificar](docs/actualizaciones.md) · [Notas de versión](CHANGELOG.md)
 

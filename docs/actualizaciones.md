@@ -14,16 +14,18 @@ La aplicación gestiona comprobación, descarga, instalación y recuperación. L
 | `.exe.blockmap` | Información para descarga diferencial |
 | `latest.yml` | Versión, descriptor, tamaño y SHA-512 |
 | `release-manifest.json` | Identificación, tamaño, hashes y estado Authenticode |
+| `Tutor-IA-Portable.exe` | Ejecución portable; actualización mediante descarga manual |
+| `sbom.cdx.json` | Inventario CycloneDX del grafo npm de producción; no cubre todos los binarios del instalador |
 
 Los artefactos de versiones diferentes no deben mezclarse. El [checksums.txt](../checksums.txt) de este repositorio identifica explícitamente una versión; para cualquier otra, usa su propio manifiesto.
 
 ## Verificar una descarga
 
-Para la versión 4.1.6, descarga el instalador y manifiesto de [la misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.6). Desde esa carpeta:
+Para la versión 4.1.7, descarga el instalador y manifiesto de [la misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.7). Desde esa carpeta:
 
 ```powershell
 $manifest = Get-Content -Raw -LiteralPath .\release-manifest.json | ConvertFrom-Json
-$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-4.1.6.exe
+$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-4.1.7.exe
 $actualHash = (Get-FileHash -LiteralPath $installer.FullName -Algorithm SHA256).Hash
 if ($installer.Name -ne $manifest.installer.name) { throw 'El nombre no coincide.' }
 if ($installer.Length -ne $manifest.installer.size) { throw 'El tamaño no coincide.' }
@@ -31,7 +33,7 @@ if ($actualHash -ne $manifest.installer.sha256) { throw 'El SHA-256 no coincide.
 Get-AuthenticodeSignature -LiteralPath $installer.FullName
 ```
 
-El manifiesto publicado de 4.1.6 declara 137.011.253 bytes y estado `NotSigned`. Su SHA-256 coincide con el digest del asset publicado en GitHub. Eso acredita coherencia del artefacto con el manifiesto, no una firma del editor.
+Consulta en el manifiesto el tamaño y estado de firma del instalador de esa versión. Un SHA-256 coincidente acredita coherencia del artefacto con el manifiesto, no una firma del editor. Los hashes del instalador y portable se publican en `checksums.txt`.
 
 Si falla una comprobación, no ejecutes el archivo. Descarga de nuevo desde la release oficial o [reporta el problema](soporte.md).
 

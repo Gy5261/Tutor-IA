@@ -1,10 +1,12 @@
 # Privacidad y tratamiento de datos
 
-Esta guía describe los flujos implementados en Tutor-IA 4.1.2, revisados el 12 de septiembre de 2026. Sustituye la descripción anterior que afirmaba que no existía almacenamiento remoto de contenido.
+Esta guía describe los flujos implementados en Tutor-IA 4.1.7, revisados el 13 de septiembre de 2026. Sustituye la descripción anterior que afirmaba que no existía almacenamiento remoto de contenido.
 
 ## Almacenamiento local
 
 El perfil local conserva conversaciones, preferencias, memoria contextual y estado de aprendizaje mediante el almacenamiento del renderer. También existen directorios para workspaces, exportaciones, estado administrativo, métricas y recuperación de actualizaciones.
+
+Desde 4.1.7, la memoria contextual está desactivada por defecto para cada cuenta. En Ajustes → Memoria del tutor puedes habilitarla, deshabilitarla y borrarla. Al habilitarla, el contexto recordado puede enviarse al proveedor de IA junto con tus preguntas. Desactivarla conserva recuerdos existentes pero impide crearlos o utilizarlos; borrarla elimina el perfil contextual de esa cuenta. El historial, borradores, adjuntos, perfil pedagógico y plan de estudio conservan sus controles independientes. Ninguna de estas acciones borra retroactivamente datos ya enviados a servicios externos.
 
 Las credenciales de Google y de la sesión de plataforma utilizan el almacenamiento seguro nativo de Electron. Esto **no significa que todo el historial local esté cifrado con ese mecanismo**. El componente de persistencia cifrada presente en el código no está conectado al historial completo del arranque actual.
 

@@ -2,6 +2,15 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
+## [4.1.7](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.7)
+
+- Menú del Centro Administrativo integrado con el diseño de la aplicación, navegación por teclado y cierre consistente.
+- Memoria del tutor opcional por cuenta, desactivada por defecto, con activación y borrado desde Ajustes.
+- Política compartida del tutor de programación: respuestas breves, correcciones directas y firmeza respetuosa.
+- Instalador Windows x64, ejecutable portable e inventario CycloneDX de dependencias npm.
+
+La memoria contextual se gestiona por separado del historial y el plan de estudio. El instalador utiliza el canal automático; portable requiere descarga manual. No se declara certificación EMES.
+
 ## [4.1.6](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.6)
 
 - IA privada reunida en un dashboard continuo de Servicio, Acceso, Proveedores, Consumo y Actividad, sin pestañas internas.
