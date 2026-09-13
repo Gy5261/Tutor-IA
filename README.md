@@ -27,7 +27,7 @@ Los archivos “Source code (zip/tar.gz)” que GitHub muestra en Releases son c
 | Aprendizaje | Actividades, seguimiento y memoria del perfil local |
 | Colaboración | Conversaciones compartidas, invitaciones y comentarios |
 | Herramientas | Análisis web, PowerShell protegido y ejecución JavaScript aislada |
-| Administración | Gestión de acceso, estudiantes, cohortes, uso y configuración de IA privada para roles autorizados |
+| Administración | Gestión de estudiantes y dashboard integrado de IA privada: servicio, acceso, proveedores, consumo real y actividad para roles autorizados |
 
 La versión vigente usa Google para iniciar sesión. El acceso institucional y el modo voz fueron retirados en 4.1.2. Los componentes ocultos o en pausa no se presentan como funciones disponibles.
 

@@ -19,11 +19,11 @@ Los artefactos de versiones diferentes no deben mezclarse. El [checksums.txt](..
 
 ## Verificar una descarga
 
-Para la versión 4.1.5, descarga el instalador y manifiesto de [la misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.5). Desde esa carpeta:
+Para la versión 4.1.6, descarga el instalador y manifiesto de [la misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.6). Desde esa carpeta:
 
 ```powershell
 $manifest = Get-Content -Raw -LiteralPath .\release-manifest.json | ConvertFrom-Json
-$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-4.1.5.exe
+$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-4.1.6.exe
 $actualHash = (Get-FileHash -LiteralPath $installer.FullName -Algorithm SHA256).Hash
 if ($installer.Name -ne $manifest.installer.name) { throw 'El nombre no coincide.' }
 if ($installer.Length -ne $manifest.installer.size) { throw 'El tamaño no coincide.' }
@@ -31,7 +31,7 @@ if ($actualHash -ne $manifest.installer.sha256) { throw 'El SHA-256 no coincide.
 Get-AuthenticodeSignature -LiteralPath $installer.FullName
 ```
 
-El manifiesto publicado de 4.1.5 declara 137.007.249 bytes y estado `NotSigned`. Su SHA-256 coincide con el digest del asset publicado en GitHub. Eso acredita coherencia del artefacto con el manifiesto, no una firma del editor.
+El manifiesto publicado de 4.1.6 declara 137.011.253 bytes y estado `NotSigned`. Su SHA-256 coincide con el digest del asset publicado en GitHub. Eso acredita coherencia del artefacto con el manifiesto, no una firma del editor.
 
 Si falla una comprobación, no ejecutes el archivo. Descarga de nuevo desde la release oficial o [reporta el problema](soporte.md).
 

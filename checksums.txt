@@ -1,1 +1,1 @@
-7db9152a7f11cc93bd579acc7c669a79d6527ff50e88bb83cc7ce53950b92fac  Tutor-IA-Setup-4.1.5.exe
+9e507976de7b3135fd0306a38d343cfacad12163b8bfffa9e1070dc0364e81e1  Tutor-IA-Setup-4.1.6.exe

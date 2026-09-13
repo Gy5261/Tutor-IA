@@ -2,7 +2,17 @@
 
 Las notas de cada [release](https://github.com/Gy5261/Tutor-IA/releases/latest) describen la versión publicada. Este índice no pretende reconstruir cambios que no estén documentados.
 
-## [4.1.5](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.5)
+## [4.1.6](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.1.6)
+
+- IA privada reunida en un dashboard continuo de Servicio, Acceso, Proveedores, Consumo y Actividad, sin pestañas internas.
+- Claves guardadas enmascaradas y revelación temporal solo para administradores.
+- Activación con prueba real de respuesta, cuotas diarias de Supabase y notificaciones integradas.
+- Corrección de la conexión de proveedores desde Supabase Edge, conservando validación de IP y certificado TLS.
+- Resumen administrativo ajustado al contenido y revisión visual en tres tamaños de ventana.
+
+Google, Firebase y Supabase se comprobaron con la cuenta conectada: el chat respondió y su cuota quedó contabilizada en el servidor. La disponibilidad depende del proveedor y los permisos de cada cuenta.
+
+## 4.1.5
 
 - Diálogos que se abren desde su botón de origen y se cierran siguiendo el recorrido inverso.
 - Transiciones direccionales al cambiar opciones de aprendizaje, administración e IA privada.
