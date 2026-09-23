@@ -27,4 +27,4 @@ La búsqueda no evita CAPTCHA ni garantiza acceso a todas las páginas. Revisa s
 - [Actualizaciones y verificación](docs/actualizaciones.md).
 - [Privacidad](PRIVACIDAD.md) y [seguridad](SECURITY.md).
 
-Este repositorio publica documentación y descargas, no código interno ni configuración de servicios. El instalador 6.1.8 no tiene firma Authenticode; verifica su procedencia e integridad sin desactivar las protecciones de Windows.
+
