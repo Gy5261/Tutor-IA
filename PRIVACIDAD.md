@@ -1,41 +1,33 @@
-# Privacidad y tratamiento de datos
+# Privacidad
 
-Esta guía describe los flujos implementados en Tutor-IA 4.1.7, revisados el 13 de septiembre de 2026. Sustituye la descripción anterior que afirmaba que no existía almacenamiento remoto de contenido.
+Guía de Tutor-IA 6.1.8. La aplicación combina datos locales y servicios remotos.
 
-## Almacenamiento local
+## Datos utilizados
 
-El perfil local conserva conversaciones, preferencias, memoria contextual y estado de aprendizaje mediante el almacenamiento del renderer. También existen directorios para workspaces, exportaciones, estado administrativo, métricas y recuperación de actualizaciones.
-
-Desde 4.1.7, la memoria contextual está desactivada por defecto para cada cuenta. En Ajustes → Memoria del tutor puedes habilitarla, deshabilitarla y borrarla. Al habilitarla, el contexto recordado puede enviarse al proveedor de IA junto con tus preguntas. Desactivarla conserva recuerdos existentes pero impide crearlos o utilizarlos; borrarla elimina el perfil contextual de esa cuenta. El historial, borradores, adjuntos, perfil pedagógico y plan de estudio conservan sus controles independientes. Ninguna de estas acciones borra retroactivamente datos ya enviados a servicios externos.
-
-Las credenciales de Google y de la sesión de plataforma utilizan el almacenamiento seguro nativo de Electron. Esto **no significa que todo el historial local esté cifrado con ese mecanismo**. El componente de persistencia cifrada presente en el código no está conectado al historial completo del arranque actual.
-
-## Servicios remotos
-
-| Servicio | Qué procesa o conserva |
+| Destino | Datos necesarios |
 | --- | --- |
-| Google / Firebase Identity | Identidad, inicio de sesión y validación de la cuenta |
-| Firestore | Control global e individual de acceso, registros de cuenta/dispositivo, resúmenes educativos, sesiones reflejadas, compartidos y comentarios |
-| Supabase | Cuentas, sesiones, aprobaciones, estudiantes/cohortes, configuración privada de IA, cuotas y registros de uso/auditoría |
-| Proveedores de IA | Mensajes y contexto enviados para generar respuestas, incluido contenido de adjuntos cuando se utiliza |
-| Servicios de análisis web | Consultas y solicitudes de páginas realizadas por la herramienta |
-| Servicios de correo | Destinatarios y contenido de invitaciones/notificaciones cuando se envían |
-| GitHub | Solicitudes de descarga y actualización, y cualquier contenido que el usuario publique en Issues |
+| Tu equipo | Historial, preferencias, memoria, progreso y archivos del proyecto |
+| Google / Firebase | Identidad, acceso, registro de dispositivos, seguimiento educativo y contenido compartido |
+| Supabase | Cuentas, sesiones, permisos, configuración de IA y consumo |
+| Proveedor de IA | Preguntas, contexto y contenido de adjuntos utilizados para responder |
+| Buscadores y páginas web | Consultas y solicitudes de lectura |
+| Correo | Destinatarios y contenido de avisos o invitaciones |
+| GitHub | Descargas, actualizaciones y lo que publiques en incidencias |
 
-El historial local y una conversación compartida tienen destinos distintos. No debe interpretarse “local-first” como ausencia de conexiones remotas.
+No todos los datos permanecen en tu equipo. Tampoco se garantiza que todo el historial local esté cifrado.
 
-## Acceso y credenciales
+## Tus controles
 
-Los permisos se comprueban en la aplicación y los servicios remotos. Una cuenta ordinaria no obtiene permisos administrativos por acceder al repositorio público.
+La memoria contextual es opcional y está desactivada por defecto. Puedes habilitarla, deshabilitarla o borrarla en Ajustes → Memoria del tutor. Desactivarla no borra los recuerdos existentes; borrarla no elimina el historial, los adjuntos ni el progreso.
 
-Las claves de proveedores de IA privada se almacenan cifradas en el backend y no se devuelven al renderer como parte de la configuración pública. La autenticación puede renovarse automáticamente, por lo que las conexiones de sesión no requieren pulsar un botón en cada ocasión.
+Compartir contenido o usarlo como contexto implica transmitirlo al servicio correspondiente. Evita enviar información que no debas compartir.
 
-## Conservación y eliminación
+## Eliminación y conservación
 
-Actualizar el programa no está diseñado para borrar el perfil local. El instalador está configurado para conservar los datos de aplicación al desinstalar.
+Actualizar o desinstalar no elimina necesariamente el perfil local. Borrar datos locales no borra copias compartidas ni registros remotos.
 
-Borrar datos locales no equivale a borrar registros remotos, compartidos, comentarios o auditoría. Para una solicitud sobre datos administrados por la plataforma, contacta al responsable de tu acceso mediante el canal privado que ya utilices. No publiques la solicitud con información personal en Issues.
+Solicita cambios sobre datos de la plataforma al responsable de tu acceso por un canal privado. No publiques datos personales en Issues.
 
-Esta documentación no establece un plazo único de retención para todos los servicios ni garantiza una política de entrenamiento de terceros. No se deben atribuir esas garantías al producto sin verificar las condiciones del proveedor y su configuración.
+No se declara un plazo único de conservación ni una política universal de entrenamiento de terceros; depende del servicio y su configuración.
 
-[Volver al inicio](README.md)
+[Inicio](README.md)

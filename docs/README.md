@@ -1,18 +1,12 @@
-# Documentación
-
-## Usar Tutor-IA
+# Guías de Tutor-IA 6.1.8
 
 1. [Instalar e iniciar sesión](instalacion.md).
-2. [Actualizar y verificar el instalador](actualizaciones.md).
-3. [Resolver o reportar problemas](soporte.md).
+2. [Usar la IA, la búsqueda y el proyecto](uso.md).
+3. [Actualizar y verificar descargas](actualizaciones.md).
+4. [Resolver problemas](soporte.md).
 
-## Datos, seguridad e historial
+[Privacidad](../PRIVACIDAD.md) · [Seguridad](../SECURITY.md) · [Cambios](../CHANGELOG.md) · [Archivo histórico](archive/README.md)
 
-- [Privacidad y servicios remotos](../PRIVACIDAD.md).
-- [Seguridad y reporte de vulnerabilidades](../SECURITY.md).
-- [Cambios recientes](../CHANGELOG.md).
-- [Archivo histórico](archive/README.md).
+Aquí solo se documenta el uso público. No se incluyen despliegues, claves, cuentas administrativas ni configuración interna.
 
-Estas guías corresponden al producto público y al instalador Windows. El repositorio no contiene instrucciones para compilar el código privado ni promete acceso libre a los servicios de IA.
-
-[Volver al inicio](../README.md)
+[Inicio](../README.md)

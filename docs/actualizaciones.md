@@ -1,48 +1,41 @@
-# Actualizaciones e integridad
+# Actualizaciones
 
-## Canal de distribución
+La edición instalada consulta el [canal oficial](https://github.com/Gy5261/Tutor-IA/releases/latest). La actualización puede requerir reinicio y depende de la conexión del equipo. El portable se reemplaza manualmente.
 
-La edición instalada de Tutor-IA consulta las [Releases oficiales](https://github.com/Gy5261/Tutor-IA/releases/latest). La política automática corresponde al instalador Windows NSIS; desarrollo, portable y Microsoft Store tienen políticas distintas.
+## Qué descargar
 
-La aplicación gestiona comprobación, descarga, instalación y recuperación. La actualización puede requerir reinicio. No se garantiza que una release se instale al mismo tiempo en todos los equipos: depende de conectividad y del ciclo del cliente.
-
-## Archivos de una release
-
-| Archivo | Función |
+| Archivo | Uso |
 | --- | --- |
-| `Tutor-IA-Setup-<versión>.exe` | Instalador que ejecuta el usuario |
-| `.exe.blockmap` | Información para descarga diferencial |
-| `latest.yml` | Versión, descriptor, tamaño y SHA-512 |
-| `release-manifest.json` | Identificación, tamaño, hashes y estado Authenticode |
-| `Tutor-IA-Portable.exe` | Ejecución portable; actualización mediante descarga manual |
-| `sbom.cdx.json` | Inventario CycloneDX del grafo npm de producción; no cubre todos los binarios del instalador |
+| `Tutor-IA-Setup-6.1.8.exe` | Instalador |
+| `Tutor-IA-Portable.exe` | Edición portable |
+| `release-manifest.json` | Versión, tamaño, hashes y firma del instalador |
+| `latest.yml` y `.blockmap` | Actualización automática |
+| `sbom.cdx.json` | Inventario de dependencias publicado |
 
-Los artefactos de versiones diferentes no deben mezclarse. El [checksums.txt](../checksums.txt) de este repositorio identifica explícitamente una versión; para cualquier otra, usa su propio manifiesto.
+No mezcles archivos de versiones diferentes.
 
-## Verificar una descarga
+## Verificar descarga
 
-Para la versión 4.3.1, descarga el instalador y manifiesto de [la misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v4.3.1). Desde esa carpeta:
+Descarga el instalador y el manifiesto de la [misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.8). En PowerShell, desde esa carpeta:
 
 ```powershell
 $manifest = Get-Content -Raw -LiteralPath .\release-manifest.json | ConvertFrom-Json
-$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-4.3.1.exe
-$actualHash = (Get-FileHash -LiteralPath $installer.FullName -Algorithm SHA256).Hash
-if ($installer.Name -ne $manifest.installer.name) { throw 'El nombre no coincide.' }
-if ($installer.Length -ne $manifest.installer.size) { throw 'El tamaño no coincide.' }
-if ($actualHash -ne $manifest.installer.sha256) { throw 'El SHA-256 no coincide.' }
+$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-6.1.8.exe
+$hash = (Get-FileHash -LiteralPath $installer.FullName -Algorithm SHA256).Hash
+if ($installer.Name -ne $manifest.installer.name -or
+    $installer.Length -ne $manifest.installer.size -or
+    $hash -ne $manifest.installer.sha256) { throw 'El archivo no coincide.' }
 Get-AuthenticodeSignature -LiteralPath $installer.FullName
 ```
 
-Consulta en el manifiesto el tamaño y estado de firma del instalador de esa versión. Un SHA-256 coincidente acredita coherencia del artefacto con el manifiesto, no una firma del editor. Los hashes del instalador y portable se publican en `checksums.txt`.
+Los hashes de 6.1.8 también están en [checksums.txt](../checksums.txt). El estado actual es `NotSigned`; un hash correcto no equivale a firma digital.
 
-Si falla una comprobación, no ejecutes el archivo. Descarga de nuevo desde la release oficial o [reporta el problema](soporte.md).
+Si la comprobación falla, no ejecutes el archivo. Descárgalo otra vez o consulta [soporte](soporte.md).
 
-## Datos y recuperación
+## Si falla una actualización
 
-La actualización reemplaza archivos del programa y está configurada para conservar el perfil. No borres el historial o el perfil para solucionar un fallo de actualización.
+Conserva el error y tus datos. Reabre la aplicación; si no arranca, descarga el instalador estable oficial. No borres el perfil ni fuerces una versión anterior sin ayuda.
 
-Si la instalación se interrumpe, vuelve a abrir Tutor-IA. Si no inicia, conserva el mensaje de error y descarga el instalador estable oficial. El sistema contiene mecanismos de recuperación, pero no se promete recuperación automática frente a cualquier fallo del equipo o del disco.
+Cambiar esta documentación no actualiza por sí solo los equipos ni reemplaza los ejecutables.
 
-Una actualización de estos documentos en `main` no cambia el instalador publicado ni obliga a reiniciar la aplicación.
-
-[Volver a documentación](README.md)
+[Guías](README.md)

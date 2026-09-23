@@ -1,23 +1,17 @@
 # Seguridad
 
-## Distribución e integridad
+Descarga únicamente desde las [releases oficiales](https://github.com/Gy5261/Tutor-IA/releases/latest).
 
-Descarga el instalador desde las [Releases oficiales](https://github.com/Gy5261/Tutor-IA/releases/latest). Una release actualizable incluye `.exe`, `.blockmap`, `latest.yml` y `release-manifest.json`.
+El instalador 6.1.8 figura como `NotSigned`: no tiene firma Authenticode. Los hashes permiten compararlo con su manifiesto, pero no sustituyen una firma del editor. [Verificar descarga](docs/actualizaciones.md#verificar-descarga).
 
-Compara el SHA-256 del instalador con el manifiesto de **esa misma versión**. El tamaño y SHA-512 también están registrados. [Instrucciones de verificación](docs/actualizaciones.md).
+No desactives antivirus ni protecciones de Windows para instalar o ejecutar Tutor-IA.
 
-El manifiesto publicado de **4.1.6 declara `NotSigned`**. El canal actual no exige certificado Authenticode; no debe describirse este instalador como firmado. Los hashes comprueban integridad respecto al manifiesto, pero no sustituyen una firma del editor. Esta documentación no cambia la política del actualizador ni indica que se desactiven protecciones de Windows.
+## Reportar un problema sensible
 
-## Reportar una vulnerabilidad
+Usa un canal privado ya establecido con el responsable del proyecto. Si no tienes uno, solicita contacto mediante una [incidencia general](https://github.com/Gy5261/Tutor-IA/issues/new), sin describir la vulnerabilidad ni adjuntar información sensible.
 
-Los Issues de este repositorio son públicos y el reporte privado de vulnerabilidades de GitHub no está habilitado en la revisión del 12 de septiembre de 2026.
+Nunca publiques claves, tokens, archivos de sesión, perfiles, conversaciones, documentos privados o datos de estudiantes. Revisa las capturas antes de enviarlas.
 
-No publiques detalles de explotación, credenciales ni información personal. Utiliza un canal privado ya establecido con el responsable del proyecto; si no dispones de uno, abre una incidencia general solicitando un canal de contacto, sin incluir el contenido sensible.
+Para fallos sin datos sensibles, consulta [soporte](docs/soporte.md).
 
-Para errores funcionales sin información sensible, sigue la [guía de soporte](docs/soporte.md).
-
-## Información que no debe adjuntarse
-
-Claves API, tokens, archivos de sesión, perfiles de usuario, conversaciones, documentos privados y datos de estudiantes. Revisa y oculta esa información antes de compartir una captura.
-
-[Volver al inicio](README.md)
+[Inicio](README.md)
