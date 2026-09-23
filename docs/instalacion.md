@@ -1,9 +1,9 @@
 # Instalación
 
-Tutor-IA 6.1.9 se distribuye para Windows x64. El acceso con Google, la IA remota y las actualizaciones requieren internet.
+Tutor-IA 6.1.10 se distribuye para Windows x64. El acceso con Google, la IA remota y las actualizaciones requieren internet.
 
 1. Abre la [release oficial](https://github.com/Gy5261/Tutor-IA/releases/latest).
-2. Descarga `Tutor-IA-Setup-6.1.9.exe`.
+2. Descarga `Tutor-IA-Setup-6.1.10.exe`.
 3. [Verifica el archivo](actualizaciones.md#verificar-descarga), instálalo y abre Tutor-IA.
 4. Inicia sesión con Google.
 

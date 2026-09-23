@@ -24,6 +24,10 @@ Revisa cambios y resultados. No se promete acceso ilimitado al equipo ni compati
 
 Para leer carpetas y archivos de texto externos al proyecto, activa Configuración > Entornos de desarrollo > Lectura del equipo y confirma el diálogo. El permiso es de solo lectura, por conversación y sesión; puedes revocarlo y se pierde al cerrar sesión o reiniciar. No autoriza modificar, borrar ni ejecutar archivos del equipo. Se protegen credenciales conocidas, datos privados de la aplicación y enlaces.
 
+Para modificar archivos, usa **Carpetas de trabajo** en ese mismo menú, elige las carpetas y confirma. Cada creación, edición, copia, movimiento o borrado recuperable requiere aprobación. Puedes pedir al tutor que consulte los puntos de recuperación y restaure uno; no sobrescribirá cambios posteriores. Si una operación necesita elevación, se solicita otra confirmación y UAC de Windows, sin elevar toda la aplicación.
+
+La lectura de archivos grandes usa páginas; la búsqueda puede localizar fragmentos sin cargar todo el archivo. No implica contexto ilimitado ni acceso a cualquier formato. Cada permiso se revoca por separado; cerrar sesión o reiniciar revoca ambos.
+
 Los nombres y textos consultados se envían al proveedor de IA para responderte. Autoriza únicamente contenido que puedas compartir.
 
 Adjunta únicamente contenido que puedas compartir. Los PDF sin texto seleccionable no garantizan extracción de contenido.

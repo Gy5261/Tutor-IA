@@ -1,4 +1,4 @@
-# Guías de Tutor-IA 6.1.9
+# Guías de Tutor-IA 6.1.10
 
 1. [Instalar e iniciar sesión](instalacion.md).
 2. [Usar la IA, la búsqueda y el proyecto](uso.md).

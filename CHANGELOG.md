@@ -1,5 +1,12 @@
 # Cambios
 
+## [6.1.10](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.10)
+
+- Lectura por páginas y búsqueda en archivos de texto grandes.
+- Cambios en carpetas elegidas con aprobación por operación y recuperación.
+- Elevación puntual confirmada mediante UAC, sin administración general del equipo.
+- Tarjetas de actividad de archivos más claras y adaptables.
+
 ## [6.1.9](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.9)
 
 - Lectura del equipo con confirmación explícita, separada del proyecto aislado.

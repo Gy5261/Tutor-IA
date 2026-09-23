@@ -1,4 +1,4 @@
-# Tutor-IA 6.1.9
+# Tutor-IA 6.1.10
 
 Tutor de programación para Windows x64: conversaciones con IA, documentos, práctica y herramientas de proyecto.
 
@@ -6,7 +6,7 @@ Tutor de programación para Windows x64: conversaciones con IA, documentos, prá
 
 ## Empezar
 
-1. Descarga `Tutor-IA-Setup-6.1.9.exe` desde la release oficial.
+1. Descarga `Tutor-IA-Setup-6.1.10.exe` desde la release oficial.
 2. Instala, abre Tutor-IA e inicia sesión con Google.
 3. Consulta tu acceso y cuota en la aplicación. Las funciones remotas requieren conexión.
 
@@ -14,7 +14,8 @@ La edición instalada recibe actualizaciones; el portable se reemplaza manualmen
 
 ## Novedades
 
-- Lectura de archivos del equipo con confirmación explícita y permiso revocable.
+- Lectura paginada y búsqueda en archivos de texto grandes, con permiso revocable.
+- Cambios confirmados en carpetas elegidas, puntos de recuperación y elevación puntual mediante UAC.
 - Búsqueda web con alternativas cuando una fuente falla.
 - Resultados parciales y páginas inaccesibles identificados.
 - Herramientas de proyecto con permisos y pausa.
