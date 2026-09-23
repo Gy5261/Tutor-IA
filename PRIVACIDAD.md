@@ -1,6 +1,6 @@
 # Privacidad
 
-Guía de Tutor-IA 6.1.10. La aplicación combina datos locales y servicios remotos.
+Guía de Tutor-IA 6.1.11. La aplicación combina datos locales y servicios remotos.
 
 ## Datos utilizados
 

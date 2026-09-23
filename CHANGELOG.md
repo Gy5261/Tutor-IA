@@ -1,5 +1,13 @@
 # Cambios
 
+## [6.1.11](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.11)
+
+- Límite de salida de 8192 tokens en las rutas y asignaciones existentes.
+- Corregido el parámetro de respuesta de Ollama.
+- Se conservan los proveedores y modelos configurados.
+
+En Ollama cloud, el modelo GPT-OSS 120B dispone de una ventana de 128K tokens. Su API compatible con OpenAI no permite fijar `num_ctx` por petición.
+
 ## [6.1.10](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.10)
 
 - Lectura por páginas y búsqueda en archivos de texto grandes.
