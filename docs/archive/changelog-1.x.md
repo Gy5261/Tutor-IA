@@ -1,6 +1,6 @@
 # Versiones 1.x
 
-Resumen histórico. No describe los permisos, integraciones ni tratamiento de datos de 6.1.8.
+Resumen histórico. No describe los permisos, integraciones ni tratamiento de datos de 6.1.9.
 
 | Versión | Hito |
 | --- | --- |

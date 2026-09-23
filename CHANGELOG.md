@@ -1,5 +1,11 @@
 # Cambios
 
+## [6.1.9](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.9)
+
+- Lectura del equipo con confirmación explícita, separada del proyecto aislado.
+- Permiso revocable por conversación y sesión; sin escritura ni ejecución en el equipo.
+- Información clara sobre el envío de nombres y textos consultados al proveedor de IA.
+
 ## [6.1.8](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.8)
 
 - Búsqueda web con alternativas ante resultados insuficientes.

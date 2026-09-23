@@ -22,6 +22,10 @@ Revisa cambios y resultados. No se promete acceso ilimitado al equipo ni compati
 
 ## Documentos y memoria
 
+Para leer carpetas y archivos de texto externos al proyecto, activa Configuración > Entornos de desarrollo > Lectura del equipo y confirma el diálogo. El permiso es de solo lectura, por conversación y sesión; puedes revocarlo y se pierde al cerrar sesión o reiniciar. No autoriza modificar, borrar ni ejecutar archivos del equipo. Se protegen credenciales conocidas, datos privados de la aplicación y enlaces.
+
+Los nombres y textos consultados se envían al proveedor de IA para responderte. Autoriza únicamente contenido que puedas compartir.
+
 Adjunta únicamente contenido que puedas compartir. Los PDF sin texto seleccionable no garantizan extracción de contenido.
 
 La memoria contextual se controla por cuenta desde Ajustes; consulta [privacidad](../PRIVACIDAD.md).

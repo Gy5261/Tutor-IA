@@ -2,7 +2,7 @@
 
 Descarga únicamente desde las [releases oficiales](https://github.com/Gy5261/Tutor-IA/releases/latest).
 
-El instalador 6.1.8 figura como `NotSigned`: no tiene firma Authenticode. Los hashes permiten compararlo con su manifiesto, pero no sustituyen una firma del editor. [Verificar descarga](docs/actualizaciones.md#verificar-descarga).
+El instalador 6.1.9 figura como `NotSigned`: no tiene firma Authenticode. Los hashes permiten compararlo con su manifiesto, pero no sustituyen una firma del editor. [Verificar descarga](docs/actualizaciones.md#verificar-descarga).
 
 No desactives antivirus ni protecciones de Windows para instalar o ejecutar Tutor-IA.
 

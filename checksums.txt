@@ -1,2 +1,2 @@
-5c547b7d2e4aadfec3f7c6977108b49450c80fd84a566b40d848eeceb56469f3  Tutor-IA-Setup-6.1.8.exe
-f2aa0a7cf7b63b6ec9a7a44872fdc9c77c02be83504f8c76f68a7bef265d22c9  Tutor-IA-Portable.exe
+681ead3d9e74f1c108939cf4b43c9b801b81f2ded6026ab6e79f1ecf10be0303  Tutor-IA-Setup-6.1.9.exe
+f609a9bd61e222bbe807bf5f356fbd6f850712c8e25a76349b50516fc2cafbf2  Tutor-IA-Portable.exe

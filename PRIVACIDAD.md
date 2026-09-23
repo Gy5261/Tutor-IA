@@ -1,6 +1,6 @@
 # Privacidad
 
-Guía de Tutor-IA 6.1.8. La aplicación combina datos locales y servicios remotos.
+Guía de Tutor-IA 6.1.9. La aplicación combina datos locales y servicios remotos.
 
 ## Datos utilizados
 
@@ -9,7 +9,7 @@ Guía de Tutor-IA 6.1.8. La aplicación combina datos locales y servicios remoto
 | Tu equipo | Historial, preferencias, memoria, progreso y archivos del proyecto |
 | Google / Firebase | Identidad, acceso, registro de dispositivos, seguimiento educativo y contenido compartido |
 | Supabase | Cuentas, sesiones, permisos, configuración de IA y consumo |
-| Proveedor de IA | Preguntas, contexto y contenido de adjuntos utilizados para responder |
+| Proveedor de IA | Preguntas, contexto, adjuntos y nombres/textos de archivos consultados con permiso de lectura del equipo |
 | Buscadores y páginas web | Consultas y solicitudes de lectura |
 | Correo | Destinatarios y contenido de avisos o invitaciones |
 | GitHub | Descargas, actualizaciones y lo que publiques en incidencias |
@@ -17,6 +17,8 @@ Guía de Tutor-IA 6.1.8. La aplicación combina datos locales y servicios remoto
 No todos los datos permanecen en tu equipo. Tampoco se garantiza que todo el historial local esté cifrado.
 
 ## Tus controles
+
+La lectura del equipo está desactivada hasta tu confirmación explícita. Se autoriza por conversación y sesión, es revocable y no permite modificar, borrar ni ejecutar archivos. Revocarla impide nuevas lecturas, pero no retira contenido ya enviado o incorporado al historial.
 
 La memoria contextual es opcional y está desactivada por defecto. Puedes habilitarla, deshabilitarla o borrarla en Ajustes → Memoria del tutor. Desactivarla no borra los recuerdos existentes; borrarla no elimina el historial, los adjuntos ni el progreso.
 

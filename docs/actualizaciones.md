@@ -6,7 +6,7 @@ La edición instalada consulta el [canal oficial](https://github.com/Gy5261/Tuto
 
 | Archivo | Uso |
 | --- | --- |
-| `Tutor-IA-Setup-6.1.8.exe` | Instalador |
+| `Tutor-IA-Setup-6.1.9.exe` | Instalador |
 | `Tutor-IA-Portable.exe` | Edición portable |
 | `release-manifest.json` | Versión, tamaño, hashes y firma del instalador |
 | `latest.yml` y `.blockmap` | Actualización automática |
@@ -16,11 +16,11 @@ No mezcles archivos de versiones diferentes.
 
 ## Verificar descarga
 
-Descarga el instalador y el manifiesto de la [misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.8). En PowerShell, desde esa carpeta:
+Descarga el instalador y el manifiesto de la [misma release](https://github.com/Gy5261/Tutor-IA/releases/tag/v6.1.9). En PowerShell, desde esa carpeta:
 
 ```powershell
 $manifest = Get-Content -Raw -LiteralPath .\release-manifest.json | ConvertFrom-Json
-$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-6.1.8.exe
+$installer = Get-Item -LiteralPath .\Tutor-IA-Setup-6.1.9.exe
 $hash = (Get-FileHash -LiteralPath $installer.FullName -Algorithm SHA256).Hash
 if ($installer.Name -ne $manifest.installer.name -or
     $installer.Length -ne $manifest.installer.size -or
@@ -28,7 +28,7 @@ if ($installer.Name -ne $manifest.installer.name -or
 Get-AuthenticodeSignature -LiteralPath $installer.FullName
 ```
 
-Los hashes de 6.1.8 también están en [checksums.txt](../checksums.txt). El estado actual es `NotSigned`; un hash correcto no equivale a firma digital.
+Los hashes de 6.1.9 también están en [checksums.txt](../checksums.txt). El estado actual es `NotSigned`; un hash correcto no equivale a firma digital.
 
 Si la comprobación falla, no ejecutes el archivo. Descárgalo otra vez o consulta [soporte](soporte.md).
 
