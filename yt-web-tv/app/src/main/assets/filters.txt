@@ -1,0 +1,17 @@
+! Built-in WebView request filters
+||doubleclick.net^
+||googlesyndication.com^
+||googleadservices.com^
+||googletagservices.com^
+||adservice.google.com^
+||adservice.google.com.co^
+||pagead2.googlesyndication.com^
+||static.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||imasdk.googleapis.com^
+||pubads.g.doubleclick.net^
+contains:/pagead/
+contains:/api/stats/ads
+contains:googleads
+contains:adformat=
+contains:ad_type=
